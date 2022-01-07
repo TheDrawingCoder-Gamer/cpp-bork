@@ -23,3 +23,10 @@ extern class Test {
 extern class Baz {
     var foo:cpp.Int32;
 }
+
+@:include("test.h")
+@:native("Faz")
+extern class Faz {
+    @:native("Faz::Faz")
+    public function new();
+}
